@@ -1,0 +1,42 @@
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark container-fluid">
+   <div class="container">
+    <a class="navbar-brand" href="#">
+        <img src="assets/imges/logo.png" class="w-50">
+    </a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink='recipe' *ngIf='isLogin'>Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink='about' *ngIf='isLogin'>about</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink='login' *ngIf='!isLogin'>login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink='register' *ngIf='!isLogin'>register</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" routerLink='logout' *ngIf='isLogin' (click)='logOut()'>logout</a>
+            </li>
+            
+            
+        </ul>
+        
+    </div>
+   </div>
+</nav>
+
+
+
+<div class="headImg h-100 w-100">
+    <img  src="assets/imges/mainBg.jpg" alt="" class="h-100 w-100">
+    
+</div>

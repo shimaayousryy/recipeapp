@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Squada+One&display=swap');
+
+$height:200px;
+
+*{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+
+
+
+.recAll{
+    background-image: url('./assets/imges/1.png');
+    background-size: cover;
+    height: 100%;
+}
+
+.recImg{
+    height: $height;
+}
